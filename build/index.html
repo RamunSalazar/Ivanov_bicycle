@@ -12,7 +12,27 @@
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-700.woff2" as="font">
   </head>
   <body>
-    <svg style="display: none"></svg>
+    <svg style="display: none">
+      <symbol id="logo" viewBox="0 0 68 21" fill="none">
+        <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"></path>
+        <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"></path>
+        <path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"></path>
+        <path d="M38.2092 5.61453L29.0823 12.316L31.1955 15.194L40.3224 8.49252L38.2092 5.61453Z" fill="#0AD9C6"></path>
+        <path d="M26.6674 3C22.8035 3 19.6243 6.13028 19.6243 10.0431C19.6243 13.9071 22.7546 17.0863 26.6674 17.0863C30.5313 17.0863 33.7105 13.956 33.7105 10.0431C33.7105 6.17919 30.5313 3 26.6674 3ZM26.6674 13.2712C24.8577 13.2712 23.4393 11.8039 23.4393 10.0431C23.4393 8.23344 24.9066 6.81503 26.6674 6.81503C28.4282 6.81503 29.8955 8.28235 29.8955 10.0431C29.8955 11.8039 28.4282 13.2712 26.6674 13.2712Z" fill="#0AD9C6"></path>
+        <path d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6"></path>
+        <path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"></path>
+        <rect x="37" y="3" width="6" height="4" fill="#0AD9C6"></rect>
+      </symbol>
+      <symbol id="humburger" viewBox="0 0 24 14" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 14H23.25V13H0.75V14ZM0.75 7.74996H23.25V6.74996H0.75V7.74996ZM0.75 0.5V1.5H23.25V0.5H0.75Z" fill="black"></path>
+      </symbol>
+      <symbol id="arrow" viewBox="0 0 8 12" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"></path>
+      </symbol>
+      <symbol id="close" viewBox="0 0 24 25" fill="none">
+        <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </symbol>
+    </svg>
     <header class="header">
       <div class="container">
         <nav>
@@ -20,32 +40,49 @@
             <li>
               <a href="#">
                 <span>О нас</span>
-                <svg></svg>
+                <svg class="header__link-img" width="8" height="12" viewBox="0 0 8 12">
+                  <use xlink:href="#arrow"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <span>Виды велосипедов</span>
-                <svg></svg>
+                <svg class="header__link-img" width="8" height="12" viewBox="0 0 8 12">
+                  <use xlink:href="#arrow"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <span>Видео про велосипеды</span>
-                <svg></svg>
+                <svg class="header__link-img" width="8" height="12" viewBox="0 0 8 12">
+                  <use xlink:href="#arrow"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <span>Контакты</span>
-                <svg></svg>
+                <svg class="header__link-img" width="8" height="12" viewBox="0 0 8 12">
+                  <use xlink:href="#arrow"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </nav>
         <div class="header__logo-wrap">
-          <svg></svg>
-          <button type="button" aria-label="Кнопка переключения мобильного меню"></button>
+          <svg width="68" height="21" viewBox="0 0 68 21">
+            <use xlink:href="#logo"></use>
+          </svg>
+          <button class="header__toggle" type="button" aria-label="Кнопка переключения мобильного меню">
+            <svg class="header__toggle-img header__toggle-img--open" width="24" height="14" viewBox="0 0 24 14">
+              <use xlink:href="#humburger"></use>
+            </svg>
+            <svg class="header__toggle-img header__toggle-img--close" width="24" height="25" viewBox="0 0 24 25">
+              <use xlink:href="#close"></use>
+            </svg>
+          </button>
         </div>
         <div class="header__text-wrap">
           <h1>Мы продаем велосипеды</h1>
@@ -54,11 +91,17 @@
         <div class="header__form-wrap">
           <span>Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
           <form>
-            <label for="name" class="visually-hidden" aria-label="Поле для ввода имени"></label>
-            <input id="name" type="text" placeholder="Введите Ваше Имя">
-            <label for="phone" class="visually-hidden" aria-label="Поле для ввода телефона"></label>
-            <input id="phone" type="tel" placeholder="Введите Ваш номер телефона">
-            <button type="submit">Подобрать велосипед мечты</button>
+            <div class="header__name-wrap">
+              <label for="name" class="visually-hidden" aria-label="Поле для ввода имени"></label>
+              <input id="name" type="text" placeholder="Введите Ваше Имя">
+            </div>
+            <div class="header__phone-wrap">
+              <label for="phone" class="visually-hidden" aria-label="Поле для ввода телефона"></label>
+              <input class="header__form-phone" id="phone" type="tel" placeholder="Введите Ваш номер телефона">
+            </div>
+            <button class="header__form-button" type="submit">
+              <span>Подобрать велосипед мечты</span>
+            </button>
           </form>
         </div>
       </div>
@@ -96,22 +139,22 @@
                 <img>
                 <figcaption>Дорожный велосипед</figcaption>
               </figure>
-              <svg></svg>
+              <svg style="display: none"></svg>
             </li>
             <li class="types-bicycles__list-item types-bicycles__list-item--two">
               <figure>
                 <img>
                 <figcaption>Горный велосипед</figcaption>
               </figure>
-              <svg></svg>
-              <svg></svg>
+              <svg style="display: none"></svg>
+              <svg style="display: none"></svg>
             </li>
             <li class="types-bicycles__list-item types-bicycles__list-item--three">
               <figure>
                 <img>
                 <figcaption>Детский велосипед</figcaption>
               </figure>
-              <svg></svg>
+              <svg style="display: none"></svg>
             </li>
           </ul>
         </div>
@@ -122,7 +165,7 @@
           <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
           <div class="bicycle-video__img-wrap">
             <img>
-            <button type="button" aria-label="Кнопка воспроизведения видео">
+            <button style="display: none" type="button" aria-label="Кнопка воспроизведения видео">
               <svg></svg>
             </button>
           </div>
@@ -136,11 +179,11 @@
         <div class="footer__map-wrap"></div>
         <div class="footer__link-wrap">
           <a href="#">
-            <svg></svg>
+            <svg style="display: none"></svg>
             <span>puteshestviemechta@gmail.ru</span>
           </a>
           <a href="#">
-            <svg></svg>
+            <svg style="display: none"></svg>
             <span>+7 (499) -784-684-46</span>
           </a>
         </div>
