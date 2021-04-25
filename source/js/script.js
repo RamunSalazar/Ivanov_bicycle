@@ -1,15 +1,14 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+const headerElement = document.querySelector('.header');
+const headerToggleElement = document.querySelector('.header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+headerElement.classList.remove('header--nojs');
+headerElement.classList.remove('header--open');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
+headerToggleElement.addEventListener('click', () => {
+  if (headerElement.classList.contains('header--open')) {
+    headerElement.classList.remove('header--open');
   } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+    headerElement.classList.add('header--open');
   }
 });

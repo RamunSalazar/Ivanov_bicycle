@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 130px;
+  margin-bottom: 151px;
 
   .container {
     text-align: center;
@@ -42,7 +42,7 @@
 @media (min-width: $desktop-width) and (max-width: $desctop-content-width - 1px) {
   .about-us {
     dl {
-      width: calc($desktop-width - 56px);
+      width: calc(1024px - 56px);
     }
 
     dd {
@@ -75,8 +75,10 @@
   }
 }
 
-@media (max-width: $table-width) {
+@media (max-width: $table-width - 1px) {
   .about-us {
+    margin-bottom: 40px;
+
     h2 {
       width: calc(100% + 10px);
       position: relative;

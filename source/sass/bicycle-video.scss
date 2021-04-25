@@ -1,0 +1,136 @@
+.bicycle-video {
+  background-image: linear-gradient(to bottom, $black-normal 706px, $white 706px, $white 100%);
+  margin-bottom: 147px;
+
+  .container {
+    padding-top: 95px;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: $white;
+    position: relative;
+    left: -5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    width: 340px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    color: $white;
+    opacity: 0.7;
+    margin: 0 auto 56px auto;
+  }
+}
+
+.bicycle-video__img-wrap {
+  position: relative;
+}
+
+.bicycle-video__button {
+  position: absolute;
+  top: 43.5%;
+  left: 47.4%;
+  border: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    position: relative;
+    left: 3px;
+  }
+}
+
+@media (max-width: $desktop-width - 1px) {
+  .bicycle-video {
+    background-image: linear-gradient(to bottom, $black-normal 413px, $white 413px, $white 100%);
+    margin-bottom: 64px;
+
+    .container {
+      padding-top: 50px;
+    }
+
+    h2 {
+      font-size: 24px;
+      left: auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 429px;
+      margin: 0 auto 40px auto;
+    }
+  }
+
+  .bicycle-video__img-wrap {
+    width: 503px;
+    margin: 0 auto;
+  }
+
+  .bicycle-video__button {
+    width: 90px;
+    height: 90px;
+    top: 33.5%;
+    left: 41.1%;
+
+    svg {
+      width: 22px;
+      height: 27px;
+    }
+  }
+}
+
+@media (max-width: $table-width - 1px) {
+  .bicycle-video {
+    background-image: linear-gradient(to bottom, $black-normal 384px, $white 384px, $white 100%);
+
+    .container {
+      padding-top: 64px;
+      padding-left: 15px;
+    }
+
+    h2 {
+      font-size: 24px;
+      left: -5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 100%;
+      margin: 0 auto 53px auto;
+    }
+  }
+
+  .bicycle-video__img-wrap {
+    width: 288px;
+  }
+
+  .bicycle-video__button {
+    top: 29%;
+    left: 39%;
+    width: 65px;
+    height: 65px;
+
+    svg {
+      width: auto;
+      height: auto;
+      left: 2px;
+    }
+  }
+}
