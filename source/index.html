@@ -122,8 +122,8 @@
               <input id="name" type="text" placeholder="Введите Ваше Имя" required>
             </div>
             <div class="header__phone-wrap">
-              <label for="phone" class="visually-hidden" aria-label="Поле для ввода телефона"></label>
-              <input class="header__form-phone" id="phone" type="tel" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" placeholder="Введите Ваш номер телефона" required>
+              <label for="phone-element" class="visually-hidden" aria-label="Поле для ввода телефона"></label>
+              <input class="header__form-phone" id="phone-element" type="tel" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" placeholder="Введите Ваш номер телефона" required>
             </div>
             <button class="header__form-button" type="submit">
               <span>Подобрать велосипед мечты</span>
@@ -178,7 +178,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/mountain-bicycle.webp 1x, img/mountain-bicycle@2x.webp 2x">
                   <!-- 1х: 342px; 2x: 684px -->
-                  <img src="img/mountain-bicycle.png" srcset="img/mountain-bicycle@2x.png 2x" width="" height="" alt="Горный велосипед">
+                  <img src="img/mountain-bicycle.png" srcset="img/mountain-bicycle@2x.png 2x" alt="Горный велосипед">
                 </picture>
                 <figcaption>Горный велосипед</figcaption>
               </figure>
@@ -248,7 +248,7 @@
           <h2>Видео про велосипеды</h2>
           <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
           <div class="bicycle-video__img-wrap">
-            <img src="img/video-bicycle.png" width="929px" height="522px" alt="Видео">
+            <img src="img/video-bicycle.png" width="929" height="522" alt="Видео">
             <button class="bicycle-video__button" type="button" aria-label="Кнопка воспроизведения видео">
               <svg width="14" height="19" viewBox="0 0 14 19">
                 <use xlink:href="#play-icon"></use>
@@ -261,7 +261,7 @@
     <footer id="footer" class="footer">
       <div class="container">
         <h2>Как нас найти?</h2>
-        <p>Мы находимся по адресу: <nobr>Санкт-Петербург</nobr>, ул. Большая Конюшенная, д. 19</p>
+        <p>Мы находимся по адресу: <span style="white-space: nowrap">Санкт-Петербург</span>, ул. Большая Конюшенная, д. 19</p>
         <div class="footer__map-wrap"></div>
         <div class="footer__link-wrap">
           <a class="footer__link-email" href="mailto:puteshestviemechta@gmail.ru">
