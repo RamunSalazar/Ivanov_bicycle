@@ -56,8 +56,12 @@
       z-index: 1;
     }
 
-    svg {
+    &::before {
       position: absolute;
+      content: "";
+      width: 180px;
+      height: 180px;
+      background-image: url("../img/ellipse.svg");
       top: 156px;
       left: -60px;
     }
@@ -66,24 +70,34 @@
   &--two {
     margin-top: 39px;
 
-    .types-bicycles__rectangle {
-      &--left {
-        position: absolute;
-        top: -18px;
-        left: -19px;
-      }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 47px;
+      background-image: url("../img/rectangle.svg");
+      top: -18px;
+      left: -19px;
+    }
 
-      &--right {
-        position: absolute;
-        bottom: 31px;
-        right: -23px;
-      }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 47px;
+      background-image: url("../img/rectangle.svg");
+      bottom: 31px;
+      right: -23px;
     }
   }
 
   &--three {
-    svg {
+    &::after {
       position: absolute;
+      content: "";
+      width: 95px;
+      height: 95px;
+      background-image: url("../img/ellipse-small.svg");
       top: -32px;
       right: -36px;
     }
@@ -145,7 +159,10 @@
     &--one {
       margin-top: 0;
 
-      svg {
+      &::before {
+        width: 127px;
+        height: 127px;
+        background-image: url("../img/ellipse-tablet.svg");
         top: 201px;
         left: -37px;
       }
@@ -153,10 +170,21 @@
 
     &--two {
       margin-top: 0;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
     }
 
     &--three {
-      svg {
+      &::after {
+        width: 68px;
+        height: 68px;
+        background-image: url("../img/ellipse-small-tablet.svg");
         top: -20px;
         right: -25px;
       }
@@ -184,14 +212,14 @@
 
   .types-bicycles__list-item {
     &--one {
-      svg {
+      &::before {
         top: 200px;
         left: -25px;
       }
     }
 
     &--three {
-      svg {
+      &::after {
         top: -21px;
         right: -14px;
       }
