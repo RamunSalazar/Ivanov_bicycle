@@ -13,8 +13,6 @@
     line-height: 30px;
     letter-spacing: -0.005em;
     color: $white;
-    position: relative;
-    left: -5px;
     margin-bottom: 20px;
   }
 
@@ -60,7 +58,7 @@
 @media (max-width: $desktop-width - 1px) {
   .bicycle-video {
     background-image: linear-gradient(to bottom, $black-normal 413px, $white 413px, $white 100%);
-    margin-bottom: 64px;
+    margin-bottom: 66px;
 
     .container {
       padding-top: 50px;

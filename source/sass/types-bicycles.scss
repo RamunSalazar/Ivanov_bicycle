@@ -4,7 +4,7 @@
   .container {
     text-align: center;
     padding-top: 125px;
-    padding-bottom: 149px;
+    padding-bottom: 151px;
   }
 
   h2 {
@@ -86,7 +86,7 @@
       width: 47px;
       height: 47px;
       background-image: url("../img/rectangle.svg");
-      bottom: 31px;
+      bottom: 29px;
       right: -23px;
     }
   }
@@ -144,6 +144,7 @@
 
     img {
       min-width: 270px;
+      margin-bottom: 17px;
     }
 
     &--desktop {
