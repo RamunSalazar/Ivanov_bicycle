@@ -17,6 +17,7 @@
   dl {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 28px;
   }
 
@@ -46,7 +47,7 @@
     }
 
     dd {
-      width: 250px;
+      width: 242px;
     }
   }
 }

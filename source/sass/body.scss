@@ -1,7 +1,18 @@
 body {
   width: 100%;
+  min-height: 100%;
   padding: 0;
   margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: $desktop-width - 1px) {
+  .body {
+    &--menu {
+      overflow: hidden;
+    }
+  }
 }

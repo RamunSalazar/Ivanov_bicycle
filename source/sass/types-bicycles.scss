@@ -39,7 +39,9 @@
     letter-spacing: -0.5px;
     color: $black;
   }
+}
 
+.types-bicycles__img-wrap {
   &--tablet {
     display: none;
   }
@@ -146,14 +148,6 @@
       min-width: 270px;
       margin-bottom: 17px;
     }
-
-    &--desktop {
-      display: none;
-    }
-
-    &--tablet {
-      display: flex;
-    }
   }
 
   .types-bicycles__list-item {
@@ -191,6 +185,16 @@
       }
     }
   }
+
+  .types-bicycles__img-wrap {
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
 }
 
 @media (max-width: $table-width - 1px) {
@@ -201,6 +205,10 @@
   }
 
   .types-bicycles__list {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+
     li {
       margin-bottom: 42px;
 

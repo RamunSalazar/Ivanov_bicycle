@@ -16,7 +16,7 @@
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="preload" href="css/style.min.css" as="style">
   </head>
-  <body>
+  <body class="body">
     <svg style="display: none">
       <symbol id="logo" viewBox="0 0 68 21" fill="none">
         <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"/>
@@ -86,7 +86,7 @@
           </ul>
         </nav>
         <div class="header__logo-wrap">
-          <a href="#" aria-label="Магазин по продаже велосипедов - Moon">
+          <a aria-label="Магазин по продаже велосипедов - Moon">
             <svg width="68" height="21" viewBox="0 0 68 21">
               <use xlink:href="#logo"></use>
             </svg>
@@ -113,7 +113,7 @@
             </div>
             <div class="header__phone-wrap">
               <label for="phone-element" class="visually-hidden" aria-label="Поле для ввода телефона"></label>
-              <input class="header__form-phone" id="phone-element" type="tel" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" placeholder="Введите Ваш номер телефона" required>
+              <input class="header__form-phone" id="phone-element" type="tel" pattern="\d{11}|\+\d{11}" placeholder="Введите Ваш номер телефона" required>
             </div>
             <button class="header__form-button" type="submit">
               <span>Подобрать велосипед мечты</span>
@@ -152,63 +152,58 @@
           <ul class="types-bicycles__list types-bicycles__list--desktop">
             <li class="types-bicycles__list-item types-bicycles__list-item--one">
               <figure>
-                <picture>
-                  <source class="lazyload" type="image/webp" srcset="img/city-bicycle.webp 1x, img/city-bicycle@2x.webp 2x" data-srcset="img/city-bicycle.webp 1x, img/city-bicycle@2x.webp 2x">
-                  <!-- 1х: 342px; 2x: 684px -->
-                  <img class="lazyload" src="img/city-bicycle.png" data-src="img/city-bicycle.png" srcset="img/city-bicycle@2x.png 2x" data-srcset="img/city-bicycle@2x.png 2x" width="342" height="503" alt="Дорожный велосипед">
-                </picture>
+                <div class="types-bicycles__img-wrap types-bicycles__img-wrap--desktop">
+                  <picture>
+                    <source class="lazyload" type="image/webp" srcset="img/city-bicycle.webp 1x, img/city-bicycle@2x.webp 2x" data-srcset="img/city-bicycle.webp 1x, img/city-bicycle@2x.webp 2x">
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img class="lazyload" src="img/city-bicycle.png" data-src="img/city-bicycle.png" srcset="img/city-bicycle@2x.png 2x" data-srcset="img/city-bicycle@2x.png 2x" width="342" height="503" alt="Дорожный велосипед">
+                  </picture>
+                </div>
+                <div class="types-bicycles__img-wrap types-bicycles__img-wrap--tablet">
+                  <picture>
+                    <source class="lazyload" type="image/webp" srcset="img/city-bicycle-tablet.webp 1x, img/city-bicycle-tablet@2x.webp 2x" data-srcset="img/city-bicycle-tablet.webp 1x, img/city-bicycle-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="lazyload" src="img/city-bicycle-tablet.png" data-src="img/city-bicycle-tablet.png" srcset="img/city-bicycle-tablet@2x.png 2x" data-srcset="img/city-bicycle-tablet@2x.png 2x" width="270" height="300" alt="Дорожный велосипед">
+                  </picture>
+                </div>
                 <figcaption>Дорожный велосипед</figcaption>
               </figure>
             </li>
             <li class="types-bicycles__list-item types-bicycles__list-item--two">
               <figure>
-                <picture>
-                  <source class="lazyload" type="image/webp" srcset="img/mountain-bicycle.webp 1x, img/mountain-bicycle@2x.webp 2x" data-srcset="img/mountain-bicycle.webp 1x, img/mountain-bicycle@2x.webp 2x">
-                  <!-- 1х: 342px; 2x: 684px -->
-                  <img class="lazyload" src="img/mountain-bicycle.png" data-src="img/mountain-bicycle.png" srcset="img/mountain-bicycle@2x.png 2x" data-srcset="img/mountain-bicycle@2x.png 2x" width="342" height="566" alt="Горный велосипед">
-                </picture>
+                <div class="types-bicycles__img-wrap types-bicycles__img-wrap--desktop">
+                  <picture>
+                    <source class="lazyload" type="image/webp" srcset="img/mountain-bicycle.webp 1x, img/mountain-bicycle@2x.webp 2x" data-srcset="img/mountain-bicycle.webp 1x, img/mountain-bicycle@2x.webp 2x">
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img class="lazyload" src="img/mountain-bicycle.png" data-src="img/mountain-bicycle.png" srcset="img/mountain-bicycle@2x.png 2x" data-srcset="img/mountain-bicycle@2x.png 2x" width="342" height="566" alt="Горный велосипед">
+                  </picture>
+                </div>
+                <div class="types-bicycles__img-wrap types-bicycles__img-wrap--tablet">
+                  <picture>
+                    <source class="lazyload" type="image/webp" srcset="img/mountain-bicycle-tablet.webp 1x, img/mountain-bicycle-tablet@2x.webp 2x" data-srcset="img/mountain-bicycle-tablet.webp 1x, img/mountain-bicycle-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="lazyload" src="img/mountain-bicycle-tablet.png" data-src="img/mountain-bicycle-tablet.png" srcset="img/mountain-bicycle-tablet@2x.png 2x" data-srcset="img/mountain-bicycle-tablet@2x.png 2x" width="270" height="300" alt="Горный велосипед">
+                  </picture>
+                </div>
                 <figcaption>Горный велосипед</figcaption>
               </figure>
             </li>
             <li class="types-bicycles__list-item types-bicycles__list-item--three">
               <figure>
-                <picture>
-                  <source class="lazyload" type="image/webp" srcset="img/kid-bicycle.webp 1x, img/kid-bicycle@2x.webp 2x" data-srcset="img/kid-bicycle.webp 1x, img/kid-bicycle@2x.webp 2x">
-                  <!-- 1х: 342px; 2x: 684px -->
-                  <img class="lazyload" src="img/kid-bicycle.png" data-src="img/kid-bicycle.png" srcset="img/kid-bicycle@2x.png 2x" data-srcset="img/kid-bicycle@2x.png 2x" width="342" height="513" alt="Детский велосипед">
-                </picture>
-                <figcaption>Детский велосипед</figcaption>
-              </figure>
-            </li>
-          </ul>
-          <ul class="types-bicycles__list types-bicycles__list--tablet">
-            <li class="types-bicycles__list-item types-bicycles__list-item--one">
-              <figure>
-                <picture>
-                  <source class="lazyload" type="image/webp" srcset="img/city-bicycle-tablet.webp 1x, img/city-bicycle-tablet@2x.webp 2x" data-srcset="img/city-bicycle-tablet.webp 1x, img/city-bicycle-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="lazyload" src="img/city-bicycle-tablet.png" data-src="img/city-bicycle-tablet.png" srcset="img/city-bicycle-tablet@2x.png 2x" data-srcset="img/city-bicycle-tablet@2x.png 2x" width="270" height="300" alt="Дорожный велосипед">
-                </picture>
-                <figcaption>Дорожный велосипед</figcaption>
-              </figure>
-            </li>
-            <li class="types-bicycles__list-item types-bicycles__list-item--two">
-              <figure>
-                <picture>
-                  <source class="lazyload" type="image/webp" srcset="img/mountain-bicycle-tablet.webp 1x, img/mountain-bicycle-tablet@2x.webp 2x" data-srcset="img/mountain-bicycle-tablet.webp 1x, img/mountain-bicycle-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="lazyload" src="img/mountain-bicycle-tablet.png" data-src="img/mountain-bicycle-tablet.png" srcset="img/mountain-bicycle-tablet@2x.png 2x" data-srcset="img/mountain-bicycle-tablet@2x.png 2x" width="270" height="300" alt="Горный велосипед">
-                </picture>
-                <figcaption>Горный велосипед</figcaption>
-              </figure>
-            </li>
-            <li class="types-bicycles__list-item types-bicycles__list-item--three">
-              <figure>
-                <picture>
-                  <source class="lazyload" type="image/webp" srcset="img/kid-bicycle-tablet.webp 1x, img/kid-bicycle-tablet@2x.webp 2x" data-srcset="img/kid-bicycle-tablet.webp 1x, img/kid-bicycle-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="lazyload" src="img/kid-bicycle-tablet.png" data-src="img/kid-bicycle-tablet.png" srcset="img/kid-bicycle-tablet@2x.png 2x" data-srcset="img/kid-bicycle-tablet@2x.png 2x" width="270" height="300" alt="Детский велосипед">
-                </picture>
+                <div class="types-bicycles__img-wrap types-bicycles__img-wrap--desktop">
+                  <picture>
+                    <source class="lazyload" type="image/webp" srcset="img/kid-bicycle.webp 1x, img/kid-bicycle@2x.webp 2x" data-srcset="img/kid-bicycle.webp 1x, img/kid-bicycle@2x.webp 2x">
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img class="lazyload" src="img/kid-bicycle.png" data-src="img/kid-bicycle.png" srcset="img/kid-bicycle@2x.png 2x" data-srcset="img/kid-bicycle@2x.png 2x" width="342" height="513" alt="Детский велосипед">
+                  </picture>
+                </div>
+                <div class="types-bicycles__img-wrap types-bicycles__img-wrap--tablet">
+                  <picture>
+                    <source class="lazyload" type="image/webp" srcset="img/kid-bicycle-tablet.webp 1x, img/kid-bicycle-tablet@2x.webp 2x" data-srcset="img/kid-bicycle-tablet.webp 1x, img/kid-bicycle-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="lazyload" src="img/kid-bicycle-tablet.png" data-src="img/kid-bicycle-tablet.png" srcset="img/kid-bicycle-tablet@2x.png 2x" data-srcset="img/kid-bicycle-tablet@2x.png 2x" width="270" height="300" alt="Детский велосипед">
+                  </picture>
+                </div>
                 <figcaption>Детский велосипед</figcaption>
               </figure>
             </li>
