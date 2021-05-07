@@ -35,6 +35,7 @@
     display: flex;
     align-items: center;
     margin-right: 90px;
+    margin-bottom: 20px;
 
     &:last-child {
       margin-right: 0;
@@ -79,6 +80,14 @@
 @media (min-resolution: 2dppx) {
   .footer__map-wrap {
     background-image: url("../img/map-desktop@2x.png");
+  }
+}
+
+@media (min-width: $desktop-width) and (max-width: $desctop-content-width - 1px) {
+  .footer {
+    .container {
+      width: 1000px;
+    }
   }
 }
 

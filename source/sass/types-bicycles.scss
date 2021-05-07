@@ -107,6 +107,12 @@
 }
 
 @media (min-width: $desktop-width) and (max-width: $desctop-content-width - 1px) {
+  .types-bicycles {
+    .container {
+      width: 1000px;
+    }
+  }
+
   .types-bicycles__list {
     padding: 0 70px;
 

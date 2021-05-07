@@ -1,6 +1,6 @@
 .bicycle-video {
   background-image: linear-gradient(to bottom, $black-normal 706px, $white 706px, $white 100%);
-  margin-bottom: 147px;
+  margin-bottom: 122px;
 
   .container {
     padding-top: 95px;
@@ -52,6 +52,14 @@
   svg {
     position: relative;
     left: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) and (max-width: $desctop-content-width - 1px) {
+  .bicycle-video {
+    .container {
+      width: 1000px;
+    }
   }
 }
 

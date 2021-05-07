@@ -3,7 +3,7 @@
   background-image: url("../img/bike-desktop.png");
   background-position: center 0;
   background-repeat: no-repeat;
-  margin-bottom: 150px;
+  margin-bottom: 125px;
   flex: 1 0 auto;
 
   .container {
@@ -19,9 +19,8 @@
 
 .header__list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 25px 20px 22px;
   position: relative;
   margin-bottom: 270px;
@@ -38,9 +37,9 @@
   }
 
   li {
-    margin-right: 50px;
+    margin-right: 135px;
 
-    &:last-child {
+    &:nth-child(4n) {
       margin-right: 0;
     }
   }
@@ -179,6 +178,15 @@
       flex-direction: column;
       padding-top: 0;
       padding-bottom: 0;
+
+      &--menu {
+        position: fixed;
+        overflow-y: scroll;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
     }
 
     &--open {
@@ -187,6 +195,7 @@
 
       .header__list {
         display: flex;
+        flex-direction: column;
         position: absolute;
         left: -22px;
         top: 0;
@@ -194,7 +203,7 @@
         width: 100%;
         padding-top: 100px;
         background-color: $white;
-        height: 200%;
+        height: auto;
         padding-bottom: 0;
         justify-content: flex-start;
 
