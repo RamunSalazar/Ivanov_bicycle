@@ -170,7 +170,7 @@
   .header {
     background-image: none;
     background-color: transparent;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     z-index: 2;
 
     .container {
@@ -193,6 +193,7 @@
     &--open {
       position: relative;
       top: -3px;
+      height: 100vh;
 
       .header__list {
         display: flex;
